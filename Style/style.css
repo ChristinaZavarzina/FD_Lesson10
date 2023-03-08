@@ -38,9 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-
 /*font-family: 'Poppins', sans-serif;----------------------------------------------------------*/
-
 
 body {
   background-image: linear-gradient(180deg, #333333 0%, #090707 11.98%);
@@ -51,8 +49,7 @@ body {
   overflow-x: hidden;
 }
 
-/*Start header----------------------------------------------------------------------------------*/
-
+/*Start header---------------------------------------------------------------------------------*/
 header {
   margin-top: 20px;
 }
@@ -80,8 +77,6 @@ header .nav__item {
   margin: 0 auto;
 }
 
-/* Start main-----------------------------------------------------------------------------------*/
-
 button {
   width: 204px;
   height: 50px;
@@ -95,6 +90,8 @@ button:hover {
   background: #3775ED;
   border: #3775ED;
 }
+
+/*Start main-----------------------------------------------------------------------------------*/
 
 h2 {
   font-weight: 700;
@@ -111,7 +108,7 @@ h4 {
   margin-top: 20px;
 }
 
-/*--------------------------------------------------------------------*/
+/*------------------------------------------------------------*/
 
 .wrapper__first {
   margin: 112px auto 0;
@@ -142,15 +139,17 @@ h4 {
   text-align: center;
   border-radius: 10px;
   -o-object-fit: fill;
-  object-fit: fill;
+    object-fit: fill;
   overflow-x: hidden;
 }
 .wrapper__first .bg__foto1 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+    object-fit: cover;
 }
 
-/*---------------------------------------------------------------------*/
+/*------------------------------------------------------------*/
 
 .wrapper__second {
   position: relative;
@@ -164,7 +163,7 @@ h4 {
   margin-bottom: 24px;
 }
 .wrapper__second .card__wesite {
-  width: 30%;
+  width: 32%;
   height: 277px;
   border-radius: 5px;
   position: relative;
@@ -215,7 +214,10 @@ h4 {
   position: relative;
 }
 .wrapper__second .web__blok h2 {
-  padding-top: 112px;
+  padding-top: 100px;
+}
+.wrapper__second .web__blok h4 {
+  padding: 0 110px;
 }
 .wrapper__second .web__blok .ellipse1 {
   position: absolute;
@@ -225,12 +227,12 @@ h4 {
 .wrapper__second .web__blok .ellipse2 {
   position: absolute;
   top: 25px;
-  left: 609px;
+  left: 350px;
 }
 .wrapper__second .web__blok .ellipse3 {
   position: absolute;
   top: 29px;
-  right: 213px;
+  right: 300px;
 }
 .wrapper__second .web__blok .ellipse4 {
   position: absolute;
@@ -258,7 +260,7 @@ h4 {
   right: 91px;
 }
 
-/*----------------------------------------------------------------------*/
+/*------------------------------------------------------------*/
 
 .wrapper__third {
   margin: 52px auto 0;
@@ -361,7 +363,7 @@ h4 {
   justify-content: center;
 }
 
-/*---------------------------------------------------------------------*/
+/*------------------------------------------------------------*/
 
 .wrapper__fourth {
   margin: 60px auto 0px;
@@ -479,12 +481,14 @@ h4 {
   text-align: center;
   border-radius: 10px;
   -o-object-fit: fill;
-  object-fit: fill;
+    object-fit: fill;
   overflow-x: hidden;
 }
 .wrapper__fourth .bg__foto2 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+    object-fit: cover;
 }
 .wrapper__fourth .bg__foto2 .display__block {
   display: block;
@@ -500,7 +504,7 @@ h4 {
   margin-left: 88px;
 }
 
-/*----------------------------------------------------------------------*/
+/*------------------------------------------------------------*/
 
 .wrapper__fifth {
   margin: 51px auto 0;
@@ -525,10 +529,11 @@ h4 {
   border-color: #1A1919;
 }
 
-/* Start footer --------------------------------------------------------------------------------*/
+/*Start footer---------------------------------------------------------------------------------*/
 
 footer .container {
-  height: 100%;
+  width: 85%;
+  margin: 0 auto;
 }
 footer .footer__block {
   width: 100%;
@@ -544,16 +549,327 @@ footer .footer__sociale {
   gap: 20px;
 }
 
-/* Start media-----------------------------------------------------------------------------------*/
+/*Start media----------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1200px) {
+  header .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .navbar {
+    padding: 0;
+  }
+  .wrapper__first h1 {
+    font-size: 2.5rem;
+  }
+  .wrapper__second .web__blok img {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/*------------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
   body {
     width: 100%;
     background: #090707;
+    overflow-x: hidden;
   }
   header {
-    width: 94%;
+    width: 100%;
     margin: 20px auto 0;
+  }
+  header .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .navbar {
+    padding: 0;
+  }
+  header button {
+    width: 174px;
+  }
+  .container {
+    width: 100%;
+  }
+  .wrapper__first {
+    margin: 64px auto 0;
+  }
+  .wrapper__first h1 {
+    width: 90%;
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    margin: 0 auto;
+  }
+  .wrapper__first h4 {
+    width: 90%;
+    margin: 25px auto 0;
+  }
+  .wrapper__first .btn {
+    height: 50px;
+    margin: 55px 0;
+    gap: 25px;
+  }
+  .wrapper__first button {
+    width: 204px;
+    height: 50px;
+  }
+  .wrapper__first .bg__foto1 {
+    width: 100%;
+    height: 348px;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+  .wrapper__first .bg__foto1 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+      object-fit: cover;
+  }
+  .wrapper__second {
+    margin: 42px auto 0;
+    width: 90%;
+  }
+  .wrapper__second h2 {
+    font-size: 1.4rem;
+  }
+  .wrapper__second h4 {
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 15px 15px 0;
+  }
+  .wrapper__second .cards__color {
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
+  .wrapper__second .card__wesite {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .wrapper__second h3 {
+    font-size: 1.2rem;
+  }
+  .wrapper__second h5 {
+    font-size: 0.9rem;
+    padding: 15px 20px 0;
+  }
+  .wrapper__second .web__blok {
+    width: 100%;
+    height: 387px;
+    margin-bottom: 72px;
+  }
+  .wrapper__second .web__blok h2 {
+    font-size: 1.2em;
+  }
+  .wrapper__second .web__blok h4 {
+    font-size: 0.9em;
+    padding: 30px 100px;
+  }
+  .wrapper__second .web__blok .ellipse1 {
+    position: absolute;
+    top: 30px;
+    left: 47px;
+  }
+  .wrapper__second .web__blok .ellipse2 {
+    position: absolute;
+    top: 45px;
+    left: 165px;
+  }
+  .wrapper__second .web__blok .ellipse3 {
+    position: absolute;
+    top: 20px;
+    right: 169px;
+  }
+  .wrapper__second .web__blok .ellipse4 {
+    position: absolute;
+    top: 75px;
+    right: 55px;
+  }
+  .wrapper__second .web__blok .ellipse5 {
+    position: absolute;
+    bottom: 80px;
+    left: 52px;
+  }
+  .wrapper__second .web__blok .ellipse6 {
+    position: absolute;
+    bottom: 45px;
+    left: 207px;
+  }
+  .wrapper__second .web__blok .ellipse7 {
+    position: absolute;
+    bottom: 65px;
+    right: 205px;
+  }
+  .wrapper__second .web__blok .ellipse8 {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+  }
+  .wrapper__second .web__blok img {
+    width: 75%;
+    height: 75%;
+  }
+  .wrapper__third {
+    margin: 72px auto 0;
+    border-bottom: 1px solid #282828;
+    width: 90%;
+  }
+  .wrapper__third h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .wrapper__third h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  .wrapper__third .cards__developer {
+    margin: 43px auto 0;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .wrapper__third .card__foto-developer {
+    width: 48%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .wrapper__third .card__foto-developer img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper__third .developer {
+    width: 100%;
+  }
+  .wrapper__third .developer h3 {
+    padding: 0 40px;
+  }
+  .wrapper__third .name16, .wrapper__third .name20, .wrapper__third .name35, .wrapper__third .name40 {
+    justify-content: space-around;
+    font-size: 0.8rem;
+  }
+  .wrapper__third .btn {
+    margin: 65px auto 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper__fourth {
+    margin: 44px auto 0px;
+  }
+  .wrapper__fourth h2 {
+    font-size: 1.4rem;
+  }
+  .wrapper__fourth h4 {
+    margin-top: 17px;
+    font-size: 1rem;
+  }
+  .wrapper__fourth .cards-user__comment {
+    width: 90%;
+    height: 100%;
+    margin: 35px auto 0;
+  }
+  .wrapper__fourth .card-user {
+    width: 47%;
+    height: 159px;
+    background: #1A1919;
+    border-radius: 5px;
+    padding: 15px 15px 0;
+  }
+  .wrapper__fourth p {
+    font-size: 0.7rem;
+  }
+  .wrapper__fourth .bg__foto2 {
+    width: 100%;
+    height: 429px;
+    margin: 45px 0;
+    border-radius: 0;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .wrapper__fourth .bg__foto2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+      object-fit: cover;
+  }
+  .wrapper__fourth .bg__foto2 h2 {
+    text-align: left;
+    font-size: 1.7rem;
+    margin: -250px 30px 0;
+  }
+  .wrapper__fourth .bg__foto2 h4 {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 1rem;
+  }
+  .wrapper__fifth {
+    margin: 40px auto 0;
+    width: 90%;
+  }
+  .wrapper__fifth .blue__block {
+    margin: 0 0 70px;
+  }
+  .wrapper__fifth h2 {
+    padding: 45px 0 20px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .wrapper__fifth h4 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+  .wrapper__fifth .btn {
+    margin: 45px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  footer .container {
+    height: 100%;
+  }
+  footer .footer__block {
+    width: 100%;
+    height: 172px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer__sociale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/*------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .wrapper__fourth p {
+    font-size: 0.65rem;
+  }
+  .wrapper__fifth {
+    margin: 0 auto 84px;
+  }
+  .wrapper__fifth .blue__block {
+    margin: 40px 0 0;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/*------------------------------------------------------------*/
+
+@media screen and (max-width: 540px) {
+  header {
+    width: 95%;
+    margin: 20px auto 0;
+  }
+  header img {
+    width: 95px;
+    height: 26px;
   }
   header .navbar {
     display: none;
@@ -561,12 +877,6 @@ footer .footer__sociale {
   header button {
     display: none;
   }
-  .container {
-    width: 100%;
-  }
-
-  /*------------------------------------------------------------------*/
-
   .wrapper__first {
     margin: 64px auto 0;
   }
@@ -575,12 +885,13 @@ footer .footer__sociale {
     letter-spacing: 1px;
   }
   .wrapper__first h4 {
+    font-size: 0.9rem;
     margin-top: 25px;
   }
   .wrapper__first .btn {
     display: block;
-    margin: 32px auto;
-    width: 94%;
+    margin: 32px auto 0;
+    width: 95%;
   }
   .wrapper__first button {
     width: 100%;
@@ -594,20 +905,17 @@ footer .footer__sociale {
     height: 348px;
     border-radius: 0;
     overflow-x: hidden;
+    margin-top: 110px;
   }
   .wrapper__first .bg__foto1 img {
     width: 100%;
-    height: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
+      object-fit: cover;
   }
-
-  /*------------------------------------------------------------------*/
-
   .wrapper__second {
     margin: 72px auto 0;
     border-bottom: none;
-    width: 94%;
+    width: 95%;
   }
   .wrapper__second h2 {
     font-size: 1.2rem;
@@ -659,7 +967,7 @@ footer .footer__sociale {
   .wrapper__second .web__blok .ellipse2 {
     position: absolute;
     top: 80px;
-    left: 127px;
+    left: 137px;
   }
   .wrapper__second .web__blok .ellipse3 {
     position: absolute;
@@ -669,39 +977,36 @@ footer .footer__sociale {
   .wrapper__second .web__blok .ellipse4 {
     position: absolute;
     top: 75px;
-    right: 25px;
+    right: 20px;
   }
   .wrapper__second .web__blok .ellipse5 {
     position: absolute;
-    bottom: 73px;
+    bottom: 80px;
     left: 22px;
   }
   .wrapper__second .web__blok .ellipse6 {
     position: absolute;
     bottom: 30px;
-    left: 107px;
+    left: 67px;
   }
   .wrapper__second .web__blok .ellipse7 {
     position: absolute;
-    bottom: 65px;
-    right: 100px;
+    bottom: 30px;
+    right: 80px;
   }
   .wrapper__second .web__blok .ellipse8 {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 45px;
+    right: 10px;
   }
   .wrapper__second .web__blok img {
     width: 65%;
     height: 65%;
   }
-
-  /*------------------------------------------------------------------*/
-
   .wrapper__third {
     margin: 72px auto 0;
     border-bottom: 1px solid #282828;
-    width: 94%;
+    width: 95%;
   }
   .wrapper__third h2 {
     text-align: center;
@@ -729,14 +1034,14 @@ footer .footer__sociale {
   .wrapper__third .developer {
     width: 100%;
   }
+  .wrapper__third .developer h3 {
+    padding: 0 50px;
+  }
   .wrapper__third .btn {
     margin: 65px auto 50px;
     display: flex;
     justify-content: center;
   }
-
-  /*------------------------------------------------------------------*/
-
   .wrapper__fourth {
     margin: 44px auto 0px;
     border-bottom: none;
@@ -751,31 +1056,11 @@ footer .footer__sociale {
   }
   .wrapper__fourth .cards-user__comment {
     display: block;
-    width: 94%;
-    height: 100%;
-    margin: 35px auto 0;
+    width: 95%;
   }
   .wrapper__fourth .card-user {
     width: 100%;
-    height: 159px;
-    background: #1A1919;
-    border-radius: 5px;
-    padding: 15px 15px 0;
     margin-bottom: 13px;
-  }
-  .wrapper__fourth .bg__foto2 {
-    width: 100%;
-    height: 429px;
-    margin: 45px 0;
-    border-radius: 0;
-    text-align: center;
-    overflow-x: hidden;
-  }
-  .wrapper__fourth .bg__foto2 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
   }
   .wrapper__fourth .bg__foto2 h2 {
     text-align: left;
@@ -787,24 +1072,20 @@ footer .footer__sociale {
     margin-left: 22px;
     font-size: 0.8rem;
   }
-
-  /*------------------------------------------------------------------*/
-
   .wrapper__fifth {
     margin: 0 auto 84px;
     border-top: 1px solid #282828;
     border-bottom: none;
-    width: 94%;
+    width: 95%;
   }
   .wrapper__fifth .blue__block {
     width: 100%;
     height: 291px;
     background: #3775ED;
     border-radius: 10px;
-    margin: 40px 0 0;
   }
   .wrapper__fifth h2 {
-    padding: 49px 20px 17px;
+    padding: 30px 20px 17px;
     font-size: 1.4rem;
     text-align: left;
   }
@@ -819,8 +1100,97 @@ footer .footer__sociale {
     display: flex;
     justify-content: left;
   }
-  footer {
-    display: none;
+}
+
+/*------------------------------------------------------------*/
+
+@media screen and (max-width: 360px) {
+  .wrapper__first h1 {
+    letter-spacing: 0;
+    font-size: 1.4rem;
+  }
+  .wrapper__first h4 {
+    font-size: 0.7em;
+  }
+  .wrapper__second h2 {
+    font-size: 1.2rem;
+  }
+  .wrapper__second h4 {
+    font-size: 0.7rem;
+  }
+  .wrapper__second h3 {
+    font-size: 1rem;
+  }
+  .wrapper__second h5 {
+    font-size: 0.7rem;
+    padding: 15px 20px 0;
+  }
+  .wrapper__second .web__blok h2 {
+    font-size: 1.1em;
+    padding: 120px 10px 0;
+  }
+  .wrapper__second .web__blok h4 {
+    font-size: 0.7em;
+    padding: 20px;
+  }
+  .wrapper__second .web__blok img {
+    width: 55%;
+    height: 55%;
+  }
+  .wrapper__third h2 {
+    font-size: 1.2rem;
+  }
+  .wrapper__third h4 {
+    font-size: 0.7rem;
+  }
+  .wrapper__third .developer h3 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-left: 17px;
+  }
+  .wrapper__third .developer .name16, .wrapper__third .developer .name20, .wrapper__third .developer .name35, .wrapper__third .developer .name40 {
+    align-items: center;
+    font-size: 0.55rem;
+  }
+  .wrapper__third .developer .name16:before, .wrapper__third .developer .name20:before, .wrapper__third .developer .name35:before, .wrapper__third .developer .name40:before {
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+  .wrapper__third .developer .name16:after, .wrapper__third .developer .name20:after, .wrapper__third .developer .name35:after, .wrapper__third .developer .name40:after {
+    padding-left: 20%;
+  }
+  .wrapper__third button {
+    width: 134px;
+    height: 30px;
+  }
+  .wrapper__fourth h2 {
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+  .wrapper__fourth h4 {
+    font-size: 0.7rem;
+  }
+  .wrapper__fourth .bg__foto2 h2 {
+    font-size: 1.2rem;
+  }
+  .wrapper__fourth .bg__foto2 h4 {
+    font-size: 0.7rem;
+  }
+  .wrapper__fifth h2 {
+    padding: 35px 20px 15px;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .wrapper__fifth h4 {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .wrapper__fifth .btn {
+    margin: 35px 20px;
+  }
+  .wrapper__fifth button {
+    width: 134px;
+    height: 30px;
   }
 }
-/* End------------------------------------------------------------------------------------------*/
+/*End----------------------------------------------------------------------------------------*/
